@@ -1,13 +1,15 @@
 body{
     margin: 0;
-    background-color: lightgreen;
+    background-image: url("../images/city.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
     display: flex;
     justify-content: center;
 }
 
 .container{
     border-top: 5px solid #107b10;
-    margin-top:50px;
+    margin-top: 40px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -51,3 +53,4 @@ input::placeholder{
     text-align: center;
     font-size: 15px;
 }
+
