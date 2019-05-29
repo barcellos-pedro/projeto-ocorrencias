@@ -1,0 +1,73 @@
+Cadastro de ocorrencias:
+POST /ocorrencia/cadastrar
+{
+    "categoria": "INFRAESTRUTURA",
+    "coordenadas": {
+        "latitude": 21.62439457,
+        "longitude": 43.60400391
+    },
+    "nivel": "BAIXORISCO",
+    "resolvido": false,
+    "titulo": "Poste não funciona",
+    "descricao": "Poste de luz não funciona"
+}
+
+GET /ocorrencia/listar
+[
+    {
+        "data": "2019-05-29T15:56:31",
+        "categoria": "DESASTRE",
+        "coordenadas": {
+            "id": 3,
+            "latitude": 23.62439457,
+            "longitude": 46.60400391
+        },
+        "nivel": "PERIGO",
+        "resolvido": false,
+        "titulo": "Buraco",
+        "descricao": "Tem um buraco na rua forte",
+        "id": 2
+    },
+    {
+        "data": "2019-05-29T17:24:45",
+        "categoria": "DESASTRE",
+        "coordenadas": {
+            "id": 5,
+            "latitude": 23.62439457,
+            "longitude": 46.60400391
+        },
+        "nivel": "PERIGO",
+        "resolvido": false,
+        "titulo": "Buraco",
+        "descricao": "Tem um buraco na rua forte",
+        "id": 4
+    },
+    {
+        "data": "2019-05-29T17:29:18",
+        "categoria": "CRIME",
+        "coordenadas": {
+            "id": 7,
+            "latitude": 20.62439457,
+            "longitude": 43.60400391
+        },
+        "nivel": "ALERTA",
+        "resolvido": false,
+        "titulo": "Zona de assaltos",
+        "descricao": "Ocorrem muitos assaltos no local",
+        "id": 6
+    },
+    {
+        "data": "2019-05-29T17:30:04",
+        "categoria": "INFRAESTRUTURA",
+        "coordenadas": {
+            "id": 9,
+            "latitude": 21.62439457,
+            "longitude": 43.60400391
+        },
+        "nivel": "BAIXORISCO",
+        "resolvido": false,
+        "titulo": "Poste não funciona",
+        "descricao": "Poste de luz não funciona",
+        "id": 8
+    }
+]
