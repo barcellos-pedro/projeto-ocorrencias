@@ -1,0 +1,24 @@
+- Pendentes
+
+. Link do "Crie sua conta" para cadastro usuário (Login) | FEITO
+. Botão "Voltar" para pagina Login (Cadastro usuário) | FEITO
+. Botão "Voltar" para pagina de visualizar ocorrencias geral (Cadastro Ocorrência) | FEITO
+. Botão "Sair" e "Criar Ocorrência" na pagina Visualizar Ocorrências (Ocorrencias geral) | FEITO
+. Javascript de confirmação dos Cadastros | PENDENTE
+
+#############################################
+
+Campos para Cadastro Ocorrência
+
+1 - Título
+2 - Descrição
+3 - Categoria (listbox)
+4 - Nivel (listbox)
+5 - Coordenadas (Endereço e CEP)
+
+Campos para Cadastro Usuário
+
+1 - Nome
+2 - Contato
+3 - CPF
+4 - Senha

@@ -10,6 +10,9 @@ body{
 
 header{
     grid-area: header;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 
 header p{
@@ -17,6 +20,28 @@ header p{
     margin-left: 20px;
     font-size: 25px;
     font-family: Roboto,Helvetica,Arial,sans-serif;
+}
+
+#btCriar{
+    color: white;
+    background-color: #50c550;
+    border: none;
+    padding: 5px 10px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+#btSair{
+    color: white;
+    background-color: #9c9c9c;
+    border: none;
+    padding: 5px 10px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
 }
 
 #ocorrencias_geral{

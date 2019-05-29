@@ -6,12 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="../css/ocorrencias_geral.css">
+    <script defer src="../javascript/ocorrencias_geral.js"></script>
     <title>Ocorrências</title>
 </head>
 
 <body>
     <header>
         <p>Todas ocorrências em São Paulo, SP</p>
+        <a href="../html/cadastro_ocorrencia.html">
+            <button id="btCriar"> Nova ocorrência </button>
+        </a>
+        <a>
+            <button id="btSair" onclick="sair()"> Sair </button>
+        </a>
     </header>
     <div id="ocorrencias_geral">
         <div class="cards">
