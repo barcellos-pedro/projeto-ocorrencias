@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/cadastro_ocorrencia.css">
+    <title>Cadastrar</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Cadastro de ocorrência</h1>
+        <label for="">Titulo</label>
+        <input type="text">
+        <label for="">Descrição</label>
+        <input type="text">
+        <label for="">Categoria</label>
+        <select>
+            <option value="---">---</option>
+            <option value="desastres">Desastres naturais</option>
+            <option value="roubo">Roubo/Furto</option>
+            <option value="pertubacao">Pertubação da paz</option>
+            <option value="abuso">Abuso sexual</option>
+            <option value="estupro">Estupro</option>
+        </select>
+        <label for="">Nível</label>
+        <select>
+            <option value="---">---</option>
+            <option value="baixo">Baixo</option>
+            <option value="medio">Médio</option>
+            <option value="alto">Alto</option>
+        </select>
+        <label for="">Coordenadas</label>
+        <input type="text" placeholder="latitude">
+        <input type="text" placeholder="longitude">
+        <button type="submit" id="btCadastrar">Cadastrar</button>
+    </div>
+</body>
+</html>

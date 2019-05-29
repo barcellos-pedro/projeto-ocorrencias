@@ -1,0 +1,53 @@
+body{
+    margin: 0;
+    background-color: lightgreen;
+    display: flex;
+    justify-content: center;
+}
+
+.container{
+    border-top: 5px solid #107b10;
+    margin-top:50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: 570px;
+    width: 300px;
+    background-color: white;
+}
+
+#btCadastrar{
+    margin-top: 20px;
+    color: white;
+    background-color: #50c550;
+    border: none;
+    padding: 10px 80px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+#btCadastrar:hover{
+    font-weight: bold;
+    color: white;
+    background-color: #008000d4;
+}
+
+input, select{
+    background-color: rgba(211, 211, 211, 0.3);
+    border: none;
+    padding: 10px 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+h1{
+    color: green;
+}
+
+input::placeholder{
+    text-align: center;
+    font-size: 15px;
+}
