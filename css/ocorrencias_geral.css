@@ -1,0 +1,32 @@
+body{
+    margin: 0;
+    display: grid;
+    grid-template-areas: "ocorrencias_geral mapa"
+                         "ocorrencias_geral mapa";
+    grid-template-rows: 80vh 19.5vh;
+    grid-template-columns: 60vw 40vw;
+}
+
+#ocorrencias_geral{
+    grid-area: ocorrencias_geral;
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#mapa{
+    grid-area: mapa;
+}
+
+.cards{
+    margin-top: 20px;
+    margin-left: 15px;
+    width: 240px;
+    height: 280px;
+    background-color: lightblue;
+    border-radius: 10px;
+}
+
+h1{
+    margin: 0;
+}
