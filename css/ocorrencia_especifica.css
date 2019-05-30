@@ -1,68 +1,81 @@
 body{
     margin: 0;
+    display: grid;
+    grid-template-areas: "left right"
+                         "left right";
+    grid-template-rows: 100vh;
+    grid-template-columns: 60vw 40vw;
 }
 
-#ocorrencias_geral{
-    grid-area: ocorrencias_geral;
-    background-color: white;
+#botoes{
+    margin-top: 2%;
+    width: 90%;
     display: flex;
-    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
-.cards{
-    margin-top: 20px;
-    margin-left: 10px;
-    width: 239px;
-    height: 300px;
-    border: 1px solid rgba(128, 128, 128, 0.3);
-    border-radius: 10px;
+/*Lado esquerdo*/
+
+#left{
+    grid-area: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.cards .cards-conteudo{
-    margin-top: 5px;
+#topicos{
+    width: 95%;
+    height: 60%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    border: 1px solid rgb(0, 0, 0, 0.4);
 }
 
-img{
-    height: 170px;
-    width: 240px;
-    border-top-right-radius: 10px;
-    border-top-left-radius: 10px;
+#btSair, #btAlterar{
+    padding: 10px 80px;
+    border: none;
+    padding: 10px 55px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#btSair{
+    color: white;
+    background-color: #9c9c9c;
+}
+
+#btAlterar{
+    color: white;
+    background-color: #50c550;
 }
 
 p{
-    margin: 1px 0;
+    font-size: 18px;
 }
 
-p:nth-child(1){
-    font-weight: bold;
+/*Lado direito*/
+
+#right{
+    grid-area: right;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 3%;
 }
 
-p:nth-child(4){
-    color: rgba(0,0,0,.54);
-}
-
-.btVer{
-    margin-top: 5px;
-    color: white;
-    background-color: #50c550;
-    padding: 5px 5px;
-    border: none;
+img{
+    height: 300px;
     border-radius: 5px;
-    font-weight: bold;
-    font-size: 15px;
-    cursor: pointer;
-    width: 100px;
 }
 
-.btVer:hover{
-    font-weight: bold;
-    color: white;
-    background-color: #3c983c;
-}
-
-span{
-    color: red;
+#descricao{
+    width: 80%;
+    margin-top: 5%;
+    text-align: center;
+    font-size: 20px;
 }
