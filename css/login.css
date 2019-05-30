@@ -18,6 +18,11 @@ body{
     align-items: center;
 }
 
+#box-login form{
+    display: flex;
+    flex-direction: column;
+}
+
 #txtUsuario{
     background-color: rgba(211, 211, 211, 0.46);
     border: none;

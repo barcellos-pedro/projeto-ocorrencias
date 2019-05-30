@@ -1,31 +1,30 @@
 body{
     margin: 0;
-    background-image: url("../images/city.jpg");
+    background-image: url("../images/people.jpg");
     background-size: cover;
-    background-repeat: no-repeat;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .container{
+    margin-top: 80px;
     border-top: 5px solid #107b10;
-    margin-top: 25px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center;
-    height: 620px;
-    width: 300px;
+    height:440px;
+    width: 750px;
     background-color: white;
 }
 
-.container form{
+form{
     display: flex;
-    flex-direction: column
+    flex-direction: column;
+    align-items: center;
 }
 
-#btCadastrar{
-    margin-top: 20px;
+#btEditar{
     color: white;
     background-color: #50c550;
     border: none;
@@ -38,12 +37,10 @@ body{
 
 #btCadastrar:hover{
     font-weight: bold;
-    color: white;
     background-color: #008000d4;
 }
 
 #btVoltar{
-    margin-top: 15px;
     color: white;
     background-color: #9c9c9c;
     border: none;
@@ -54,12 +51,13 @@ body{
     font-size: 20px;
 }
 
-input, select{
-    background-color: rgba(211, 211, 211, 0.3);
+input{
+    background-color: rgba(211, 211, 211, 0.46);
     border: none;
     padding: 10px 10px;
     margin-bottom: 10px;
     border-radius: 5px;
+    width: 600px;
 }
 
 h1{
@@ -71,3 +69,10 @@ input::placeholder{
     font-size: 15px;
 }
 
+.container div{
+    margin-top: 25px;
+    width: 83%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}

@@ -1,0 +1,118 @@
+body{
+    margin: 0;
+    display: grid;
+    grid-template-areas: "header mapa"
+                         "ocorrencias_geral mapa"
+                         "ocorrencias_geral mapa";
+    grid-template-rows: 8vh 91vh;
+    grid-template-columns: 58.5vw 40vw;
+}
+
+header{
+    grid-area: header;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-around;
+}
+
+header p{
+    margin-top: 15px;
+    margin-left: 20px;
+    font-size: 25px;
+    font-family: Roboto,Helvetica,Arial,sans-serif;
+}
+
+#btCriar{
+    color: white;
+    background-color: #50c550;
+    border: none;
+    padding: 5px 10px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+#btSair{
+    color: white;
+    background-color: #9c9c9c;
+    border: none;
+    padding: 5px 10px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#ocorrencias_geral{
+    grid-area: ocorrencias_geral;
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#mapa{
+    grid-area: mapa;
+}
+
+.cards{
+    margin-top: 20px;
+    margin-left: 10px;
+    width: 239px;
+    height: 300px;
+    border: 1px solid rgba(128, 128, 128, 0.3);
+    border-radius: 10px;
+}
+
+.cards .cards-conteudo{
+    margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1{
+    margin: 0;
+}
+
+img{
+    height: 170px;
+    width: 240px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+p{
+    margin: 1px 0;
+}
+
+p:nth-child(1){
+    font-weight: bold;
+}
+
+p:nth-child(4){
+    color: rgba(0,0,0,.54);
+}
+
+.btVer{
+    margin-top: 5px;
+    color: white;
+    background-color: #50c550;
+    border: none;
+    padding: 5px 5px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+    width: 100px;
+}
+
+.btVer:hover{
+    font-weight: bold;
+    color: white;
+    background-color: #3c983c;
+}
+
+span{
+    color: red;
+}

@@ -1,10 +1,10 @@
-- Pendentes
+- Colocar "required" em TODOS os campos | FEITO
+- Editar usuário | FEITO
+- Editar ocorrência | FEITO
+- Visualizar "minhas" ocorrências | FEITO
+- Visualizar ocorrência "clicada" (Pessoal e Geral) 2x |
 
-. Link do "Crie sua conta" para cadastro usuário (Login) | FEITO
-. Botão "Voltar" para pagina Login (Cadastro usuário) | FEITO
-. Botão "Voltar" para pagina de visualizar ocorrencias geral (Cadastro Ocorrência) | FEITO
-. Botão "Sair" e "Criar Ocorrência" na pagina Visualizar Ocorrências (Ocorrencias geral) | FEITO
-. Javascript de confirmação dos Cadastros | PENDENTE
+- Ver como pegar dados pra pagina "Ocorrência específica & Editar Ocorrência" | Pendente
 
 #############################################
 

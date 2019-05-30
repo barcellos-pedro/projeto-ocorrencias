@@ -24,7 +24,7 @@ body{
     flex-direction: column
 }
 
-#btCadastrar{
+#btEditar{
     margin-top: 20px;
     color: white;
     background-color: #50c550;
@@ -36,7 +36,7 @@ body{
     font-size: 20px;
 }
 
-#btCadastrar:hover{
+#btEditar:hover{
     font-weight: bold;
     color: white;
     background-color: #008000d4;
