@@ -1,0 +1,37 @@
+Listar Ocorrencias:
+GET http://104.46.38.224/ocorrencia/listar
+Exemplo retorno:
+[
+    {
+        "data": "2019-05-31T04:47:12",
+        "categoria": "CRIME",
+        "coordenadas": {
+            "id": 1,
+            "latitude": 20.62439457,
+            "longitude": 45.60400391
+        },
+        "nivel": "PERIGO",
+        "resolvido": false,
+        "titulo": "ta tenso",
+        "descricao": "ta tenso",
+        "id": 2
+    }
+]
+----------------------------------------------------------
+Cadastrar Ocorrencia
+POST http://104.46.38.224/ocorrencia/cadastrar
+exemplo body: 
+{
+    "data": "2019-05-30T12:44:07.761",
+    "categoria": "CRIME",
+    "coordenadas": {
+        "id": 13,
+        "latitude": 20.62439457,
+        "longitude": 45.60400391
+    },
+    "nivel": "PERIGO",
+    "resolvido": false,
+    "titulo": "ta tenso",
+    "descricao": "ta tenso",
+    "id": 12
+}
