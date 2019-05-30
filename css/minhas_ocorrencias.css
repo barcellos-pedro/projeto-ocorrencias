@@ -48,6 +48,17 @@ header p{
     font-size: 16px;
 }
 
+#btPerfil{
+    color: white;
+    background-color: #3c983c;
+    border: none;
+    padding: 5px 10px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
 #ocorrencias_geral{
     grid-area: ocorrencias_geral;
     background-color: white;
