@@ -1,5 +1,5 @@
 Listar Ocorrencias:
-GET http://104.46.38.224/ocorrencia/listar
+GET http://104.46.38.224/api/ocorrencia/listar
 Exemplo retorno:
 [
     {
@@ -19,7 +19,7 @@ Exemplo retorno:
 ]
 ----------------------------------------------------------
 Cadastrar Ocorrencia
-POST http://104.46.38.224/ocorrencia/cadastrar
+POST http://104.46.38.224/api/ocorrencia/cadastrar
 exemplo body: 
 {
     "data": "2019-05-30T12:44:07.761",
@@ -35,3 +35,4 @@ exemplo body:
     "descricao": "ta tenso",
     "id": 12
 }
+

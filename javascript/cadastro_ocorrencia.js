@@ -27,7 +27,7 @@ const cadastrarOcorrencia = (event) => {
 
     console.log(dados);
 
-    fetch('http://104.46.38.224/api/ocorrencia/cadastrar', {
+    fetch('http://104.46.38.224/api/ocorrencia', {
       method: 'POST',
       headers: {
         'Content-type': 'application/json'
