@@ -15,7 +15,7 @@ const fazerLogin = (event) => {
     const campos = document.querySelectorAll('form input');
     const dados = gerarDadosForm(campos);
   
-    fetch('http://23.97.172.42/api/usuario/login', {
+    fetch('http://104.46.38.224/api/usuario/login', {
       method: 'POST',
       headers: {
         'Content-type': 'application/json'
@@ -24,8 +24,8 @@ const fazerLogin = (event) => {
     })
     .then(resposta => resposta.json())
     .then(respostaJson => {
-      sessionStorage.setItem("usuario", JSON.stringify(respostaJson.usuario));
-      sessionStorage.setItem("token", JSON.stringify(respostaJson.token));
+      sessionStorage.setItem("usuario", (respostaJson.usuario));
+      sessionStorage.setItem("token", (respostaJson.token));
   
       window.location = 'minhas_ocorrencias.html';
     });
