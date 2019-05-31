@@ -64,6 +64,8 @@ header p{
     background-color: white;
     display: flex;
     flex-wrap: wrap;
+    border-top: 1px solid #50c550;
+    margin-top: 10px;
 }
 
 #mapa{

@@ -11,15 +11,15 @@
 <body>
     <div class="container">
         <h1>Faça parte e ajude sua cidade !</h1>
-        <form action="cadastrarUsuario()" method="GET" id="form-cadastro">
+        <form action="cadastrarUsuario()" method="POST" id="form-cadastro">
             <label for="">Nome</label>
-            <input name="NOME" type="text" id="txtNome" autofocus required>
+            <input name="nome" type="text" id="txtNome" autofocus required>
             <label for="">Contato</label>
-            <input name="CONTATO" type="text" id="txtContato" required>
+            <input name="contato" type="text" id="txtContato" required>
             <label for="">CPF</label>
-            <input name="CPF" type="text" id="txtCpf" required>
+            <input name="cpf" type="text" id="txtCpf" required>
             <label for="">Senha</label>
-            <input name="SENHA" type="text" id="txtSenha" required>
+            <input name="senha" type="text" id="txtSenha" required>
             <button type="submit" id="btCadastrar">Cadastrar</button>
             <a href="../html/login.html">
                 <button type="button" id="btVoltar">Voltar</button>

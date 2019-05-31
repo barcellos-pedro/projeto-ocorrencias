@@ -1,5 +1,5 @@
-const btCadastrar = document.querySelector('#btCadastrar');
-  
+const btLogin = document.querySelector('button');
+
 const gerarDadosForm = campos => {
     let dados = {};
     
@@ -10,16 +10,12 @@ const gerarDadosForm = campos => {
     return dados;
 }
 
-const cadastrarUsuario = (event) => {
+const fazerLogin = (event) => {
     event.preventDefault();
     const campos = document.querySelectorAll('form input');
     const dados = gerarDadosForm(campos);
-
-    dados.autoridade=false;
-
-    console.log(dados);
-
-    fetch('http://104.46.38.224/api/usuario/cadastrar', {
+  
+    fetch('http://23.97.172.42/api/usuario/login', {
       method: 'POST',
       headers: {
         'Content-type': 'application/json'
@@ -28,12 +24,13 @@ const cadastrarUsuario = (event) => {
     })
     .then(resposta => resposta.json())
     .then(respostaJson => {
-        console.log(dados);
-        alert('Usuário criado com sucesso!');
-        window.location.href="login.html"
+      sessionStorage.setItem("usuario", JSON.stringify(respostaJson.usuario));
+      sessionStorage.setItem("token", JSON.stringify(respostaJson.token));
+  
+      window.location = 'minhas_ocorrencias.html';
     });
 }
 
-if(btCadastrar){
-    btCadastrar.onclick = cadastrarUsuario;
+if(btLogin){
+    btLogin.onclick = fazerLogin;
 }

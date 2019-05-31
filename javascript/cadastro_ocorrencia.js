@@ -28,7 +28,8 @@ const cadastrarOcorrencia = (event) => {
     fetch('http://104.46.38.224/api/ocorrencia', {
       method: 'POST',
       headers: {
-        'Content-type': 'application/json'
+        'Content-type': 'application/json',
+        'Authorization': 'Bearer ' + sessionStorage.getItem('token')
       },
       body: JSON.stringify(dados)
     })
@@ -36,7 +37,7 @@ const cadastrarOcorrencia = (event) => {
     .then(respostaJson => {
       alert('Ocorrência cadastrada com sucesso!');
       console.log(dados);
-      //window.location = ""
+      window.location = "minhas_ocorrencias.html";
     });
 }
 
