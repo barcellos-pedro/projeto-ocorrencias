@@ -1,6 +1,4 @@
 const btCadastro = document.querySelector('#btCadastrar');
-
-const teste = document.querySelectorAll('#form-cadastro input, select');
   
 const gerarDadosForm = campos => {
     let dados = {};
