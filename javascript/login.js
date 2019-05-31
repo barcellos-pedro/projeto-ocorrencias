@@ -24,10 +24,14 @@ const fazerLogin = (event) => {
     })
     .then(resposta => resposta.json())
     .then(respostaJson => {
-      sessionStorage.setItem("usuario", (respostaJson.usuario));
-      sessionStorage.setItem("token", (respostaJson.token));
-  
-      window.location = 'minhas_ocorrencias.html';
+      if(respostaJson.token) {
+        sessionStorage.setItem("usuario", (respostaJson.usuario));
+        sessionStorage.setItem("token", (respostaJson.token));
+        window.location = 'minhas_ocorrencias.html';
+      }else{
+        alert("Usúario ou senha inválidos.");
+      }
+
     });
 }
 
