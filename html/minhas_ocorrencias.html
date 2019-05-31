@@ -11,7 +11,7 @@
 
 <body>
     <header>
-        <p>Suas ocorrências</p>
+        <p>Ocorrências em São Paulo, SP</p>
         <a href="../html/cadastro_ocorrencia.html">
             <button type="button" id="btCriar"> Nova ocorrência </button>
         </a>
@@ -26,9 +26,146 @@
         <!--Javascript-->
     </div>
     <div id="mapa">
-        <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.159936489899!2d-46.65678784976732!3d-23.562698667450874!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c8e6a16517%3A0x3aad904a1222eeb2!2sBrazilian+Financial+Center!5e0!3m2!1spt-BR!2sbr!4v1559144916071!5m2!1spt-BR!2sbr"
-            width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+            <style>
+                    /* Always set the map height explicitly to define the size of the div
+                     * element that contains the map. */
+                    #map {
+                      height: 100%;
+                      width: 100%;
+                    }
+                  </style>
+                </head>
+                <body>
+                  <div id="map"></div>
+                  <script>
+                    var map;
+                    function initMap() {
+                      var myStyles =[
+                        {
+                          featureType: "poi",
+                          elementType: "labels",
+                          stylers: [
+                            { visibility: "off" }
+                          ]
+                        }
+                      ];
+              
+                      map = new google.maps.Map(
+                          document.getElementById('map'),
+                          {center: new google.maps.LatLng(-23.56374127, -46.65379107), zoom: 17, styles: myStyles});
+                     
+              var caminho = "/home/pedro/teste/mapa/img/"
+                      var icons = {
+                        desastreVerde: {
+                          icon: caminho + '/desastre/desVerde.png'
+                        },
+                        desastreAmarelo: {
+                          icon: caminho + 'desastre/desAmarelo.png'
+                        },
+                        desastreVermelho: {
+                          icon: caminho + 'desastre/desVermelho.png'
+                        },
+                        infraVerde: {
+                          icon: caminho + 'infra/infraVerde.png'
+                        },
+                        infraAmarelo: {
+                          icon: caminho + 'infra/infraAmarelo.png'
+                        },
+                        infraVermelho: {
+                          icon: caminho + 'infra/infraVermelho.png'
+                         },
+                         criVerde: {
+                          icon: caminho + 'img/crime/criVerde.png'
+                        },
+                        criAmarelo: {
+                          icon: caminho + 'img/crime/criAmarelo.png'
+                        },
+                        criVermelho: {
+                          icon: caminho + 'crime/criVermelho.png'
+                        },
+                        perVerde: {
+                          icon: caminho + 'pertubacao/perVerde.png'
+                        },
+                        perAmarelo: {
+                          icon: caminho + 'pertubacao/perAmarelo.png'
+                        },
+                        perVermelho: {
+                          icon: caminho + 'pertubacao/perVermelho.png'
+                        },
+                        outrosVerde: {
+                          icon: caminho + 'outros/verde.png'
+                        },
+                        outrosAmarelo: {
+                          icon: caminho + 'outros/amarelo.png'
+                        },
+                        outrosVermelho: {
+                          icon: caminho + 'outros/vermelho.png'
+                        }
+                      };
+              
+                     
+                      var lista = [
+                        {
+                          position: new google.maps.LatLng(-23.5616269, -46.65231049),
+                          type:'desastreVerde'
+                        }, {
+                          position: new google.maps.LatLng(-23.56295453, -46.65100157),
+                          type: 'desastreAmarelo'
+                        }, {
+                          position: new google.maps.LatLng(-23.56271851, -46.65343702),
+                          type: 'desastreVermelho'
+                        }, {
+                          position: new google.maps.LatLng(-23.56301354, -46.65526092),
+                          type: 'infraVerde'
+                        }, {
+                          position: new google.maps.LatLng(-23.56364293, -46.65255725),
+                          type: 'infraAmarelo'
+                        }, {
+                          position: new google.maps.LatLng(-23.56471486, -46.65344775),
+                          type: 'infraVermelho'
+                        }, {
+                          position: new google.maps.LatLng(-23.56172524, -46.65102303),
+                          type: 'criVerde'
+                        }, {
+                          position: new google.maps.LatLng(-23.56376094, -46.65408075),
+                          type: 'criVermelho'
+                        }, {
+                          position: new google.maps.LatLng(-33.91790, 151.23463),
+                          type: 'criAmarelo'
+                        }, {
+                          position: new google.maps.LatLng(-33.91666, 151.23468),
+                          type: 'perVerde'
+                        }, {
+                          position: new google.maps.LatLng(-23.56342658, -46.65662348),
+                          type: 'perAmarelo'
+                        }, {
+                          position: new google.maps.LatLng(-23.5632594, -46.6525358),
+                          type: 'perVermelho'
+                        }, {
+                          position: new google.maps.LatLng(-23.56259066, -46.65196717),
+                          type: 'outrosVerde'
+                        }, {
+                          position: new google.maps.LatLng(-23.56533441, -46.65323317),
+                          type: 'outrosAmarelo'
+                        }, {
+                          position: new google.maps.LatLng(-23.5656196, -46.65537894),
+                          type: 'outorsVermelho'
+                        }
+                      ];
+              
+                      // Create markers.
+                      for (var i = 0; i < lista.length; i++) {
+                        var marker = new google.maps.Marker({
+                          position: lista[i].position,
+                          icon: icons[lista[i].type].icon,
+                          map: map
+                        });
+                      };
+                    }
+                  </script>
+                  <script async defer
+                  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAkNdfxu-EZrg3vOudWe4mWrRMOIAlzh9o&callback=initMap">
+                  </script>
     </div>
 </body>
 
