@@ -5,38 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="../css/cadastro_ocorrencia.css">
+    <script defer src="../javascript/cadastro_ocorrencia.js"></script>
     <title>Cadastrar</title>
 </head>
 <body>
     <div class="container">
         <h1>Cadastro de ocorrência</h1>
-        <form action="">
+        <form action="cadastrarOcorrencia()" method="POST" id="form-cadastro">
             <label for="">Titulo</label>
-            <input type="text" autofocus required>
+            <input name="titulo" type="text" autofocus required>
             <label for="">Descrição</label>
-            <input type="text" required>
+            <input name="descricao" type="text" required>
             <label for="">Categoria</label>
-            <select required>
+            <select name="categoria" required>
                 <option value="---">---</option>
-                <option value="desastres">Desastres naturais</option>
-                <option value="roubo">Roubo/Furto</option>
-                <option value="pertubacao">Pertubação da paz</option>
-                <option value="abuso">Abuso sexual</option>
-                <option value="estupro">Estupro</option>
+                <option value="CRIME">Crime</option>
+                <option value="ACIDENTE">Acidente</option>
+                <option value="PERTUBACAO">Pertubação da paz</option>
+                <option value="INFRAESTRUTURA">Infraestrutura</option>
+                <option value="DESASTRE">Desastres</option>
+                <option value="OUTROS">Outros</option>
             </select>
             <label for="">Nível</label>
-            <select required>
+            <select name="nivel" required>
                 <option value="---">---</option>
-                <option value="baixo">Baixo</option>
-                <option value="medio">Médio</option>
-                <option value="alto">Alto</option>
+                <option value="ALERTA">Baixo</option>
+                <option value="MEDIO">Médio</option>
+                <option value="ALTO">Alto</option>
             </select>
             <label for="">Coordenadas</label>
-            <input type="text" placeholder="latitude" required>
-            <input type="text" placeholder="longitude" required>
+            <input name="latitude" type="text" placeholder="latitude" required>
+            <input name="longitude" type="text" placeholder="longitude" required>
             <button type="submit" id="btCadastrar">Cadastrar</button>
-            <a href="../html/minhas_ocorrencias.html">
-                <button id="btVoltar">Voltar</button>
+            <a href="minhas_ocorrencias.html">
+                <button type="button" id="btVoltar">Voltar</button>
             </a>
         </form>
     </div>
